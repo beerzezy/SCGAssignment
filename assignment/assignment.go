@@ -36,8 +36,8 @@ func Calculation(argsStr string) (int, error) {
 	for _, unit := range areaUnit {
 		for row := 0; row < wide; row++ {
 			for cell := 0; cell < high; cell++ {
-				area[unit][cell] = 1
 				area[row][unit] = 1
+				area[unit][cell] = 1
 			}
 		}
 	}
